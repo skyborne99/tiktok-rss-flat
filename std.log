@@ -1,4 +1,4 @@
-2024-03-11 17:22:54,657 Using selector: EpollSelector
-2024-03-11 17:24:55,481 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-11 17:24:55,481 Using selector: EpollSelector
-2024-03-11 17:26:06,032 Error: net::ERR_TIMED_OUT at https://www.tiktok.com/@iamtabithabrown
+2024-03-11 18:25:08,744 Using selector: EpollSelector
+2024-03-11 18:27:10,460 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-11 18:27:10,460 Using selector: EpollSelector
+2024-03-11 18:29:12,524 Error: Data scraping unable to complete in 60.0s (retries: 3)
