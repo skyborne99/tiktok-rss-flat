@@ -1,4 +1,34 @@
-2024-04-01 17:25:58,720 Using selector: EpollSelector
-2024-04-01 17:28:03,125 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-04-01 17:28:03,125 Using selector: EpollSelector
-2024-04-01 17:30:05,473 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-04-01 18:25:00,484 Using selector: EpollSelector
+2024-04-01 18:27:03,640 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-04-01 18:27:03,640 Using selector: EpollSelector
+2024-04-01 18:27:04,179 Error: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/runner/.cache/ms-playwright/chromium-1105/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-GX0vUD --remote-debugging-pipe --no-startup-window
+<launched> pid=3140
+[pid=3140][err] [0401/182703.932274:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+[pid=3140][err] [0401/182703.933285:INFO:policy_logger.cc(145)] :components/policy/core/common/config_dir_policy_loader.cc(118) Skipping mandatory platform policies because no policy file was found at: /etc/chromium/policies/managed
+[pid=3140][err] [0401/182703.933307:INFO:policy_logger.cc(145)] :components/policy/core/common/config_dir_policy_loader.cc(118) Skipping recommended platform policies because no policy file was found at: /etc/chromium/policies/recommended
+[pid=3140][err] Received signal 11 SI_KERNEL[0401/182703.939171:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
+[pid=3140][err] 000000000000
+[pid=3140][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+[pid=3140][err] #0 0x55975340dcc2 base::debug::CollectStackTrace()
+[pid=3140][err] #1 0x5597533fb9b3 base::debug::StackTrace::StackTrace()
+[pid=3140][err] #2 0x55975340d6e1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+[pid=3140][err] #3 0x7fd874c42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+[pid=3140][err] #4 0x7fd874c44c1d getenv
+[pid=3140][err] #5 0x5597535903b2 event_base_new
+[pid=3140][err] #6 0x55975341958d base::MessagePumpLibevent::MessagePumpLibevent()
+[pid=3140][err] #7 0x55975335bbeb base::MessagePump::Create()
+[pid=3140][err] #8 0x5597533dd403 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
+[pid=3140][err] #9 0x5597533dd058 base::Thread::ThreadMain()
+[pid=3140][err] #10 0x5597533f16ef base::(anonymous namespace)::ThreadFunc()
+[pid=3140][err] #11 0x7fd874c94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
+[pid=3140][err] #12 0x7fd874d26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
+[pid=3140][err]   r8: 000039ec000b53b0  r9: 000039ec00239240 r10: 000039ec000b5430 r11: 0000000000000246
+[pid=3140][err]  r12: 00dc2200c8380000 r13: 0000000000000011 r14: 000000000000000f r15: 000055974c5c23ea
+[pid=3140][err]   di: 000055974c5c23e8  si: 0000000000000096  bp: 0000000000005645  bx: 000038c80022c800
+[pid=3140][err]   dx: 000055974c5c23e8  ax: 0000000000000011  cx: 00007fd874cec09b  sp: 00007fd85e7fc2d0
+[pid=3140][err]   ip: 00007fd874c44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+[pid=3140][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+[pid=3140][err] [end of stack trace]
