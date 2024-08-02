@@ -1,4 +1,62 @@
-2024-08-02 09:25:19,893 Using selector: EpollSelector
-2024-08-02 09:27:22,592 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-02 09:27:22,593 Using selector: EpollSelector
-2024-08-02 09:29:23,232 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-02 10:28:36,692 Using selector: EpollSelector
+2024-08-02 10:30:38,050 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-02 10:30:38,050 Using selector: EpollSelector
+2024-08-02 10:30:38,573 Error: BrowserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/runner/.cache/ms-playwright/chromium-1124/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXIoT872 --remote-debugging-pipe --no-startup-window
+<launched> pid=3100
+[pid=3100][err] [0802/103038.349204:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+[pid=3100][err] Received signal [0802/103038.355716:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
+[pid=3100][err] 11 SI_KERNEL000000000000
+[pid=3100][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+[pid=3100][err] #0 0x55c2a0e988e2 base::debug::CollectStackTrace()
+[pid=3100][err] #1 0x55c2a0e85cde base::debug::StackTrace::StackTrace()
+[pid=3100][err] #2 0x55c2a0e982f1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+[pid=3100][err] #3 0x7fbf53e42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+[pid=3100][err] #4 0x7fbf53e44c1d getenv
+[pid=3100][err] #5 0x55c2a10240b9 epoll_init
+[pid=3100][err] #6 0x55c2a1021561 event_base_new
+[pid=3100][err] #7 0x55c2a0ea4dfd base::MessagePumpLibevent::MessagePumpLibevent()
+[pid=3100][err] #8 0x55c2a0de49eb base::MessagePump::Create()
+[pid=3100][err] #9 0x55c2a0e681e3 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
+[pid=3100][err] #10 0x55c2a0e67e38 base::Thread::ThreadMain()
+[pid=3100][err] #11 0x55c2a0e7c2ea base::(anonymous namespace)::ThreadFunc()
+[pid=3100][err] #12 0x7fbf53e94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
+[pid=3100][err] #13 0x7fbf53f26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
+[pid=3100][err]   r8: ffffffffffffffff  r9: 0000123400387660 r10: 00007ffe0a7d7080 r11: 0000000000000246
+[pid=3100][err]  r12: 00dc2200d0180000 r13: 000000000000000d r14: 000000000000000b r15: 000055c299692aeb
+[pid=3100][err]   di: 000055c299692ae9  si: 00007fbf3bbf8f50  bp: 0000000000005645  bx: 000018d00022c800
+[pid=3100][err]   dx: 000055c299692ae9  ax: 000000000000000d  cx: 00007fbf53eec09b  sp: 00007fbf3bbf8ee0
+[pid=3100][err]   ip: 00007fbf53e44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+[pid=3100][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+[pid=3100][err] [end of stack trace]
+Call log:
+<launching> /home/runner/.cache/ms-playwright/chromium-1124/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXIoT872 --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3100
+  - [pid=3100][err] [0802/103038.349204:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+  - [pid=3100][err] Received signal [0802/103038.355716:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
+  - [pid=3100][err] 11 SI_KERNEL000000000000
+  - [pid=3100][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+  - [pid=3100][err] #0 0x55c2a0e988e2 base::debug::CollectStackTrace()
+  - [pid=3100][err] #1 0x55c2a0e85cde base::debug::StackTrace::StackTrace()
+  - [pid=3100][err] #2 0x55c2a0e982f1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+  - [pid=3100][err] #3 0x7fbf53e42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+  - [pid=3100][err] #4 0x7fbf53e44c1d getenv
+  - [pid=3100][err] #5 0x55c2a10240b9 epoll_init
+  - [pid=3100][err] #6 0x55c2a1021561 event_base_new
+  - [pid=3100][err] #7 0x55c2a0ea4dfd base::MessagePumpLibevent::MessagePumpLibevent()
+  - [pid=3100][err] #8 0x55c2a0de49eb base::MessagePump::Create()
+  - [pid=3100][err] #9 0x55c2a0e681e3 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
+  - [pid=3100][err] #10 0x55c2a0e67e38 base::Thread::ThreadMain()
+  - [pid=3100][err] #11 0x55c2a0e7c2ea base::(anonymous namespace)::ThreadFunc()
+  - [pid=3100][err] #12 0x7fbf53e94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
+  - [pid=3100][err] #13 0x7fbf53f26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
+  - [pid=3100][err]   r8: ffffffffffffffff  r9: 0000123400387660 r10: 00007ffe0a7d7080 r11: 0000000000000246
+  - [pid=3100][err]  r12: 00dc2200d0180000 r13: 000000000000000d r14: 000000000000000b r15: 000055c299692aeb
+  - [pid=3100][err]   di: 000055c299692ae9  si: 00007fbf3bbf8f50  bp: 0000000000005645  bx: 000018d00022c800
+  - [pid=3100][err]   dx: 000055c299692ae9  ax: 000000000000000d  cx: 00007fbf53eec09b  sp: 00007fbf3bbf8ee0
+  - [pid=3100][err]   ip: 00007fbf53e44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+  - [pid=3100][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+  - [pid=3100][err] [end of stack trace]
+
