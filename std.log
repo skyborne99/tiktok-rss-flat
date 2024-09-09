@@ -1,4 +1,4 @@
-2024-09-09 13:31:02,154 Using selector: EpollSelector
-2024-09-09 13:33:04,459 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-09 13:33:04,460 Using selector: EpollSelector
-2024-09-09 13:33:05,183 Error: BrowserContext.close: Target page, context or browser has been closed
+2024-09-09 14:30:15,556 Using selector: EpollSelector
+2024-09-09 14:32:18,296 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-09 14:32:18,297 Using selector: EpollSelector
+2024-09-09 14:34:20,985 Error: Data scraping unable to complete in 60.0s (retries: 3)
