@@ -1,10 +1,4 @@
-2024-10-06 13:27:07,539 Using selector: EpollSelector
-2024-10-06 13:27:15,229 Error: Page.goto: net::ERR_CONNECTION_RESET at https://www.tiktok.com/@dang.julia
-Call log:
-navigating to "https://www.tiktok.com/@dang.julia", waiting until "load"
-
-2024-10-06 13:27:15,230 Using selector: EpollSelector
-2024-10-06 13:27:22,889 Error: Page.goto: net::ERR_CONNECTION_RESET at https://www.tiktok.com/@iamtabithabrown
-Call log:
-navigating to "https://www.tiktok.com/@iamtabithabrown", waiting until "load"
-
+2024-10-06 14:26:17,837 Using selector: EpollSelector
+2024-10-06 14:28:20,053 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-06 14:28:20,053 Using selector: EpollSelector
+2024-10-06 14:30:22,439 Error: Data scraping unable to complete in 60.0s (retries: 3)
